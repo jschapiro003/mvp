@@ -2,7 +2,7 @@
 //initializations
 var roomateNames = ['Jon','Payam','Steven','Adam','Prad'];
 var roomates = new Roomates();
-var tasks = new Tasks({model:Task});
+var tasks = new Tasks();
 
 var loadDishWasher = new Task({
 	taskName:'Load the DishWasher',
@@ -34,6 +34,7 @@ _.each(roomateNames,function(name){
 	//create model and add to collection
 	roomates.add(new Roomate({
 	  name:name,
+	  image:'assets/images/' + name.toLowerCase() + '.jpg'
 	}));
 });
 

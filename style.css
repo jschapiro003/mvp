@@ -23,7 +23,7 @@ header {
 
 .roomate {
 	float:left;
-	border:1px solid yellow;
+	border:1px solid black;
 	color:black;
 	width:20%;
 	margin-left:10px;
@@ -37,7 +37,7 @@ header {
 }
 
 .roomate span img{
-	border:1px solid yellow;
+	border:1px solid black;
 	border-radius: 50%;
     overflow: hidden;
     width: 75px;

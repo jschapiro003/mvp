@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 		<title>Bex - Compete to Clean</title>
-		<link rel="stylesheet" href="style.css">
+		
 	</head>
 	<body>
 		
@@ -12,33 +12,43 @@
 			<h3>Bex</h3>
 		</header>
 
+		<!-- DIV used to hold each of the leaders roomateviews -->
 
+		<div id='leaderboard'>
+			<script type="text/template" id="roomate-template">
+				Name: <%= name %>
+
+			</script>
+
+		</div>
 
 
 		
 
-		<footer>Current Prize: </footer>
+		<footer id="prize">Current Prize: </footer>
 
 
 
 
 
-
-
-
-
-
-
-
+<!-- Files to Load -->
 		<script src="node_modules/jquery/dist/jquery.js"></script>
 		<script src="node_modules/underscore/underscore.js"></script>
 		<script src="node_modules/backbone/backbone.js"></script>
 		<script src="node_modules/backbone.localstorage/backbone.localStorage.js"></script>
+		<!-- Load Models -->
 		<script src="js/models/roomate.js"></script>
 		<script src="js/models/prize.js"></script>
 		<script src="js/models/task.js"></script>
+		<!-- Load Collections -->
 		<script src="js/collections/roomates.js"></script>
 		<script src="js/collections/tasks.js"></script>
+
+		<!-- Load Views/Templates -->
+			<script src="js/views/roomatesView.js"></script>
+			<script src="js/views/roomateView.js"></script>
+
+			
 		<script src="js/app.js"></script>
 	</body>
 </html>

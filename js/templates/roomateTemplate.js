@@ -1,4 +1,4 @@
-<div class = 'roomate'>
+<div class = 'roomate' id ="roomate-template">
 	<div class = 'roomateName'> <%= name %> </div>
 	<div class ='roomateImage'> 
 		<img src ='<%= image %>'></img>

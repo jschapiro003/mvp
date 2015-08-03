@@ -41,7 +41,7 @@ tasks.add(emptyDishWasher);
 tasks.add(takeOutTrash);
 
 
-
+var app = new RoomatesView();
 
 
 

@@ -1,7 +1,7 @@
 
 //initializations
 var roomateNames = ['Jon','Payam','Steven','Adam','Prad'];
-var roomates = new Roomates({model:Roomate});
+var roomates = new Roomates();
 var tasks = new Tasks({model:Task});
 
 var loadDishWasher = new Task({
@@ -29,12 +29,14 @@ var prize = new Prize({
 
 //add models to respective collections
 
+
 _.each(roomateNames,function(name){
 	//create model and add to collection
 	roomates.add(new Roomate({
-	  name:name
+	  name:name,
 	}));
 });
+
 
 tasks.add(loadDishWasher);
 tasks.add(emptyDishWasher);

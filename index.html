@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 		<title>Bex - Compete to Clean</title>
-		
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		
@@ -15,10 +15,17 @@
 		<!-- DIV used to hold each of the leaders roomateviews -->
 
 		<div id='leaderboard'>
+			
 			<script type="text/template" id="roomate-template">
-				Name: <%= name %>
+			 <div class = 'roomate'>
+				<span>Name: <%= name %></span>
+				<span>Points: <%= points %></span>
+				<span>Most Recent Task: <% mostRecentTask %></span>
+
+				</div>
 
 			</script>
+		
 
 		</div>
 

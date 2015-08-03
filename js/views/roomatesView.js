@@ -4,11 +4,11 @@ var RoomatesView = Backbone.View.extend({
 		this.render();
 	},
 	render:function(){
-		
+		this.$el.html('');
 		
 			roomates.each(function(newRoomate){
 			console.log('lets do this a bunch')
-
+			console.dir(newRoomate.attributes)
 				var roomateView = new RoomateView({
 					model: newRoomate
 				});

@@ -18,27 +18,36 @@ Once the project moves into development, the press release can be used as a touc
  
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
+  Bex
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  For once, you and your roomates will want to do the household chores.
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  Create agreed upon incentives for doing household chores. 'Gamify' the process of helping around the house. 
 
 ## Problem ##
   > Describe the problem your product solves.
+  This product ensures that each of your roomates will want to help around the house. 
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
+  Each roomate agrees on a final 'prize' that they will be held accountable for purchashing. Whenever you do a household chore, you accumulate 'x' amount of points depending on the task. Some tasks may even be a 'daily double' Whoever has the most amount of points at the end of the month wins the prize. 
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+  'Do the chores and improve your scores. Compete with your roomates and live organized once again.'
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
+  Donwload bex, add your roomates, set a final prize. Let the games begin. 
 
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  'I have been the winner for the past 3 months. Never has our apartment been more clean but I have one 3 chipotle burritos!'
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+  'Download Bex and start cleaning competitively!'

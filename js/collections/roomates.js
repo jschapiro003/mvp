@@ -1,0 +1,1 @@
+var Roomates = Backbone.Collection.extend({});

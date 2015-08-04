@@ -63,12 +63,18 @@ var taskContainer = new TasksView();
 
 var login = function(){	
 	window.currentUser = undefined;
-	while(!window.currentUser){
+	localStorage.setItem('username',undefined);
+	console.log('current user:' + localStorage.getItem('username'))
+	if (!localStorage.getItem('username')){
+		alert('sign in plz')
+	}
+	while(localStorage.getItem('username')=='undefined'){
+		console.log('this should happen')
 		var username = prompt('Welcome! Who would you like to sign in as?');
 		var found = false;
 		roomates.each(function(roomate){
 			if (username === roomate.get('name')){
-				window.currentUser = roomate;
+				localStorage.setItem('username',roomate);
 				console.log('we found a match')
 				found = true;
 			}

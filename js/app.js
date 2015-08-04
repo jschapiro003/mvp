@@ -86,9 +86,8 @@ var login = function(){
 
 $('button.addTask').on('click',function(){
 	console.log('click event')
-	setTimeout(function(){
-		$('#taskContainer').toggleClass('hidden');
-	},700);
+	
+		$('#taskContainer').toggleClass('hidden',1000,"easeOutSine");
 	
 });
 

@@ -109,6 +109,9 @@ footer {
 	padding-top:15px;
 
 }
+.task {
+	margin-top:10px;
+}
 
  .hidden{
 	visibility: hidden;

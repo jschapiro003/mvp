@@ -17,17 +17,26 @@ var emptyDishWasher = new Task({
 	dailyDouble:false
 });
 
+
 var takeOutTrash = new Task({
 	taskName:'Take Out the Trash',
 	pointValue:25,
 	dailyDouble:true
 });
 
+var pickUpMail = new Task({
+	taskName:'Pick Up Mail',
+	pointValue:30,
+	dailyDouble:false
+});
+
 var tidyLivingRoom = new Task({
 	taskName:'Tidy the Living Room',
 	pointValue:45,
-	dailyDouble:true
+	dailyDouble:false
 });
+
+
 
 var prize = new Prize({
 	name:'Chipotle',
@@ -50,6 +59,7 @@ _.each(roomateNames,function(name){
 tasks.add(loadDishWasher);
 tasks.add(emptyDishWasher);
 tasks.add(takeOutTrash);
+tasks.add(pickUpMail);
 tasks.add(tidyLivingRoom)
 
 

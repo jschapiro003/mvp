@@ -1,7 +1,8 @@
 var TaskView = Backbone.View.extend({
 
 	events : {
-		'click input.task' : 'taskClick'
+		'click input.task' : 'taskClick',
+		
 	},
 	template: _.template($('#task-template').html()),
 	
@@ -12,12 +13,16 @@ var TaskView = Backbone.View.extend({
     return this;
 	},
 	taskClick: function(e){
-
+		console.log(this.model.attributes)
 		var pointIncrease = parseInt(this.$el.find('span').text());
-		var taskPerformed = this.$el.text().slice(10);
-		taskPerformed = taskPerformed.substring(0, taskPerformed.length - 20);
+		var taskPerformed = this.$el.text().slice(14);
+		taskPerformed = taskPerformed.substring(0, taskPerformed.length - 21);
+		if (this.model.get('dailyDouble')){
+			pointIncrease = pointIncrease * 1.5;
+			alert('Congratulations! You just performed the Daily Double Chore. This task is now worth: '+
+			 this.model.get('pointValue')* 1.5);
+		}
 		
-		console.log('task performed: ' + taskPerformed);
 		window.currentUser.increaseScore(pointIncrease);
 		window.currentUser.addMostRecentTask(taskPerformed);
 		window.currentUser.completeTask(taskPerformed);

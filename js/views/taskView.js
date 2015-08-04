@@ -12,9 +12,10 @@ var TaskView = Backbone.View.extend({
     return this;
 	},
 	taskClick: function(e){
-		
+
 		var pointIncrease = parseInt(this.$el.find('span').text());
 		var taskPerformed = this.$el.text().slice(10);
+		taskPerformed = taskPerformed.substring(0, taskPerformed.length - 20);
 		
 		console.log('task performed: ' + taskPerformed);
 		window.currentUser.increaseScore(pointIncrease);

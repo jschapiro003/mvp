@@ -7,21 +7,17 @@ header {
 	border-bottom: 1px solid #000; 
 	position:absolute;
 	top:0px;
-	left:30%;
-	height:8%;
-	width:40%;
+	left:0%;
+	height:6%;
+	width:100%;
 } 
 
 header p {
 	position:absolute;
 	font-family: cursive;
-	font-size: 24px;
-	font-weight:500px;
-	left:50%;
-	top:0%;
-	
-
-
+	font-size: 44px;
+	left:50%
+		border: 1px solid #000; 
 }
 
 
@@ -33,6 +29,7 @@ footer {
 	width:40%;
 	border-top: 1px solid #000; 
 	background-color:#d6d6d6;
+	text-align:center;
 }
 
 #leaderboard {
@@ -91,13 +88,13 @@ footer {
 
 .addTask{
 	float: right;
-	position:absolute;
 	bottom:30px;
 	right:20px;
 	top:2px;
 }
 
 .logout {
+	float:left;
 	bottom:2px;
 	right:25px;
 }
@@ -119,6 +116,15 @@ footer {
 	float:left;
 	position:absolute;
 	bottom:5%;
-	font-size:24px;
-	font-weight:500px;
+	font-size:44px;
+	
+	font-family:cursive;
+}
+
+.logoImage{
+	position:absolute;
+	left:28%;
+	top:10%;
+	width:600px;
+	opacity:.2;
 }

@@ -1,6 +1,8 @@
 var TaskView = Backbone.View.extend({
 
-	//tagName: 'input',
+	events : {
+		'click input' : 'taskClick'
+	},
 	template: _.template($('#task-template').html()),
 	
 	render:function(){
@@ -8,5 +10,11 @@ var TaskView = Backbone.View.extend({
 		 this.$el.html(this.template(this.model.attributes));
 
     return this;
+	},
+	taskClick: function(e){
+		var pointIncrease = parseInt(this.$el.find('span').text());
+		window.currentUser.increaseScore(pointIncrease);
 	}
+
+
 });

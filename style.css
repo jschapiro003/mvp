@@ -55,7 +55,7 @@ footer {
 .roomate span{
 	
 	display:block;
-	
+
 	
 }
 
@@ -79,6 +79,7 @@ button {
 
 #taskContainer {
 	position:absolute;
+	background-color: #DCDCDC;
 	right:0%;
 	bottom:0%;
 	border:1px solid black;

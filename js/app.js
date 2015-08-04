@@ -46,11 +46,15 @@ tasks.add(takeOutTrash);
 
 var app = new RoomatesView();
 var taskContainer = new TasksView();
+window.currentUser = roomates.models[0];
+
 
 $('button').on('click',function(){
 	console.log('click event')
 	$('#taskContainer').toggleClass('hidden',1000);
 })
+
+
 
 
 

@@ -20,7 +20,7 @@
 			
 			<script type="text/template" id="roomate-template">
 			 <div class = 'roomate'>
-				<span><h4>Name: <%= name %> </h4></span>
+				<span><h4>Roomate: <%= name %> </h4></span>
 				<span> <img src="<%= image %>">    </img></span>
 				<span>Points: <%= points %></span>
 				<span>Most Recent Task: <% mostRecentTask %></span>
@@ -33,11 +33,12 @@
 		</div>
 
 		
-		<div id="taskContainer">
+		<div id="taskContainer" class="hidden">
 			
 			<form>
 			<script type="text/template" id="task-template">
-				<input type="checkbox" name="vehicle" value="Bike">Task: <%= taskName %> (Point Value : <%= pointValue %>)<br>
+				<input type="checkbox" >Task: <%= taskName %>  (Value : <span class=
+					'points'><%= pointValue %> </span>)<br>
 
 			</script>
 			<input type="submit" value="Submit">

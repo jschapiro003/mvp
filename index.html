@@ -20,17 +20,21 @@
 
 		<div id='leaderboard'>
 			
+			<div id='roomateContainer'>
 			<script type="text/template" id="roomate-template">
 			 <div class = 'roomate'>
 				<span><h4>Roomate: <%= name %> </h4></span>
 				<span> <img src="<%= image %>">    </img></span>
 				<span>Points: <%= points %></span>
-				<span class="mostRecentTask">Most Recent Task: <%= mostRecentTask %></span>
+				<span class="mostRecentTask">Most Recent Task: 
+				<br>
+				<%= mostRecentTask %>
+				</span>
 
 				</div>
 
-		</script>
-		
+			</script>
+			</div>
 
 		</div>
 

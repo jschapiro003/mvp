@@ -7,9 +7,9 @@ header {
 	border-bottom: 1px solid #000; 
 	position:absolute;
 	top:0px;
-	left:0%;
+	left:30%;
 	height:8%;
-	width:100%;
+	width:40%;
 } 
 
 header p {
@@ -39,19 +39,29 @@ footer {
 	background-color: #DCDCDC;
 	position:absolute;
 	margin-top:50px;
-	left:25%;
+	left:5%;
+	right:10%;
+
 	top:10%;
-	width:50%;
-	border:2px solid black;
+	
+	padding-left:15%;
+	
 }
+
+
 
 .roomate {
 	float:left;
 	
+	display:inline;
 	color:black;
-	width:20%;
-	margin-left:30px;
-	margin-top:15px;
+	width:15%;
+	margin-left:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+
+	
+
 	
 }
 .roomate span{
@@ -73,14 +83,18 @@ footer {
 }
 
 .mostRecentTask{
+
 	font-size: 12px;
+	width:100%;
+	
 }
 
-button.addTask{
+.addTask{
 	float: right;
 	position:absolute;
 	bottom:30px;
 	right:20px;
+	top:2px;
 }
 
 .logout {
@@ -105,4 +119,6 @@ button.addTask{
 	float:left;
 	position:absolute;
 	bottom:5%;
+	font-size:24px;
+	font-weight:500px;
 }

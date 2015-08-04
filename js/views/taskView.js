@@ -14,6 +14,12 @@ var TaskView = Backbone.View.extend({
 	taskClick: function(e){
 		var pointIncrease = parseInt(this.$el.find('span').text());
 		window.currentUser.increaseScore(pointIncrease);
+
+		setTimeout(function(){
+			$("input:checked").removeAttr('checked');
+		},800)
+		
+
 	}
 
 

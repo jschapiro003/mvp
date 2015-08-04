@@ -47,6 +47,11 @@ tasks.add(takeOutTrash);
 var app = new RoomatesView();
 var taskContainer = new TasksView();
 
+$('button').on('click',function(){
+	console.log('click event')
+	$('#taskContainer').toggleClass('hidden',1000);
+})
+
 
 
 

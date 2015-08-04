@@ -4,7 +4,7 @@ var TasksView = Backbone.View.extend({
 		this.render();
 	},
 	render:function(){
-		this.$el.html('');
+		//this.$el.html('');
 		
 			tasks.each(function(task){
 			
@@ -12,7 +12,7 @@ var TasksView = Backbone.View.extend({
 					model: task
 				});
 
-				this.$el.append(taskView.render().el);
+				this.$el.prepend(taskView.render().el);
 			}.bind(this))
 		
 		return this;

@@ -72,11 +72,20 @@ footer {
     margin:10px 10px 10px 10px;
 }
 
-button {
+.mostRecentTask{
+	font-size: 12px;
+}
+
+button.addTask{
 	float: right;
 	position:absolute;
-	bottom:20px;
+	bottom:30px;
 	right:20px;
+}
+
+.logout {
+	bottom:2px;
+	right:25px;
 }
 
 #taskContainer {

@@ -18,6 +18,7 @@ var TaskView = Backbone.View.extend({
 		console.log('task performed: ' + taskPerformed);
 		window.currentUser.increaseScore(pointIncrease);
 		window.currentUser.addMostRecentTask(taskPerformed);
+		window.currentUser.completeTask(taskPerformed);
 
 		setTimeout(function(){
 			$("input:checked").removeAttr('checked');

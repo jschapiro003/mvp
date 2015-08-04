@@ -13,7 +13,7 @@ var Roomate = Backbone.Model.extend({
 		this.set('points',this.get('points') + pointIncrease);
 	},
 	completeTask : function(task){
-		this.completedTasks.push(task);
+		this.get('completedTasks').push(task);
 	},
 	addMostRecentTask: function(task){
 

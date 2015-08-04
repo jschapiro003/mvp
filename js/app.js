@@ -61,31 +61,41 @@ var taskContainer = new TasksView();
 
 
 
-$('button').on('click',function(){
+var login = function(){	
+	window.currentUser = undefined;
+	while(!window.currentUser){
+		var username = prompt('Welcome! Who would you like to sign in as?');
+		var found = false;
+		roomates.each(function(roomate){
+			if (username === roomate.get('name')){
+				window.currentUser = roomate;
+				console.log('we found a match')
+				found = true;
+			}
+		});
+
+		if (found === false){
+			alert('Sorry, that roomate does not exist');
+		}
+
+	}
+};
+
+$('button.addTask').on('click',function(){
 	console.log('click event')
 	setTimeout(function(){
 		$('#taskContainer').toggleClass('hidden');
 	},700);
 	
+});
+
+login();
+
+$('button.logout').on('click',function(){
+	login();
 })
 
 
-while(!window.currentUser){
-	var username = prompt('Welcome! Who would you like to sign in as?');
-	var found = false;
-	roomates.each(function(roomate){
-		if (username === roomate.get('name')){
-			window.currentUser = roomate;
-			console.log('we found a match')
-			found = true;
-		}
-	});
-
-	if (found === false){
-		alert('Sorry, that roomate does not exist');
-	}
-
-}
 
 
 

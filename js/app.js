@@ -45,6 +45,7 @@ tasks.add(takeOutTrash);
 
 
 var app = new RoomatesView();
+var taskContainer = new TasksView();
 
 
 

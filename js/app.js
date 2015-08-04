@@ -23,6 +23,12 @@ var takeOutTrash = new Task({
 	dailyDouble:true
 });
 
+var tidyLivingRoom = new Task({
+	taskName:'Tidy the Living Room',
+	pointValue:45,
+	dailyDouble:true
+});
+
 var prize = new Prize({
 	name:'Chipotle',
 	dollarValue:9.00
@@ -43,6 +49,7 @@ _.each(roomateNames,function(name){
 tasks.add(loadDishWasher);
 tasks.add(emptyDishWasher);
 tasks.add(takeOutTrash);
+tasks.add(tidyLivingRoom)
 
 
 
@@ -50,7 +57,7 @@ tasks.add(takeOutTrash);
 
 var app = new RoomatesView();
 var taskContainer = new TasksView();
-//window.currentUser = roomates.models[0];
+
 
 
 $('button').on('click',function(){

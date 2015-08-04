@@ -5,6 +5,8 @@ var RoomateView = Backbone.View.extend({
 	initialize: function(){
 		var self = this;
 		this.listenTo(this.model, "change", this.render);
+		this.listenTo(this.model, "update", this.render);
+		this.listenTo(this.model, "add", this.render);
 	},
 	
 	render:function(){

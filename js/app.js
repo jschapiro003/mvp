@@ -98,7 +98,16 @@ $('button.logout').on('click',function(){
 	login();
 })
 
+var daysLeftInMonth = function(){
+	var a = moment().endOf('month');
+	var b = moment().today;
 
+	
+	return a.diff(b, 'days');
+}
+
+var daysLeft = daysLeftInMonth();
+$('#daysLeft').text('Days Left: ' + daysLeft);
 
 
 

@@ -100,3 +100,9 @@ button.addTask{
  .hidden{
 	visibility: hidden;
 }
+
+#daysLeft{
+	float:left;
+	position:absolute;
+	bottom:5%;
+}

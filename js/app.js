@@ -1,4 +1,5 @@
 
+
 //initializations
 var roomateNames = ['Jon','Payam','Steven','Adam','Prad'];
 var roomates = new Roomates();
@@ -44,16 +45,39 @@ tasks.add(emptyDishWasher);
 tasks.add(takeOutTrash);
 
 
+
+
+
 var app = new RoomatesView();
 var taskContainer = new TasksView();
-window.currentUser = roomates.models[0];
+//window.currentUser = roomates.models[0];
 
 
 $('button').on('click',function(){
 	console.log('click event')
-	$('#taskContainer').toggleClass('hidden',1000);
+	setTimeout(function(){
+		$('#taskContainer').toggleClass('hidden');
+	},700);
+	
 })
 
+
+while(!window.currentUser){
+	var username = prompt('Welcome! Who would you like to sign in as?');
+	var found = false;
+	roomates.each(function(roomate){
+		if (username === roomate.get('name')){
+			window.currentUser = roomate;
+			console.log('we found a match')
+			found = true;
+		}
+	});
+
+	if (found === false){
+		alert('Sorry, that roomate does not exist');
+	}
+
+}
 
 
 

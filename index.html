@@ -45,12 +45,18 @@
 			
 			<form>
 			<script type="text/template" id="task-template">
-				<input type="checkbox" >Task: <%= taskName %>  (Value : <span class=
+				<input type="checkbox" class='task'>Task: <%= taskName %>  (Value : <span class=
 					'points'><%= pointValue %> </span>)<br>
-
-			</script>
-			
+				 <div id="newTask">
+				Submit a New Task
+				<br>
+				Task:  <input type = "text"> 
+				<br>
+				Points: <input type = "number">
+			  </div>
 			</form>
+			</script>
+			 
 			
 		</div>
 		

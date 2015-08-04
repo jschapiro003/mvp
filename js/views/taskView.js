@@ -1,7 +1,7 @@
 var TaskView = Backbone.View.extend({
 
 	events : {
-		'click input' : 'taskClick'
+		'click input.task' : 'taskClick'
 	},
 	template: _.template($('#task-template').html()),
 	

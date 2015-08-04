@@ -106,6 +106,7 @@ footer {
 	bottom:0%;
 	border:1px solid black;
 	top:60%;
+	padding-top:15px;
 
 }
 
@@ -128,4 +129,13 @@ footer {
 	top:10%;
 	width:600px;
 	opacity:.2;
+}
+
+#newTask{
+	position:absolute;
+	bottom:0%;
+}
+
+#newTask input{
+	width:100%;
 }

@@ -41,7 +41,8 @@ _.each(roomateNames,function(name){
 	//create model and add to collection
 	roomates.add(new Roomate({
 	  name:name,
-	  image:'assets/images/' + name.toLowerCase() + '.jpg'
+	  image:'assets/images/' + name.toLowerCase() + '.jpg',
+	  mostRecentTask:''
 	}));
 });
 

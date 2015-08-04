@@ -16,7 +16,9 @@ var Roomate = Backbone.Model.extend({
 		this.completedTasks.push(task);
 	},
 	addMostRecentTask: function(task){
+
 		console.log('setting most recent task')
+		var task = task.toString()
 		this.set('mostRecentTask',task);
 	}
 });

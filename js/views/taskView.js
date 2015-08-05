@@ -18,9 +18,9 @@ var TaskView = Backbone.View.extend({
 		var taskPerformed = this.$el.text().slice(14);
 		taskPerformed = taskPerformed.substring(0, taskPerformed.length - 21);
 		if (this.model.get('dailyDouble')){
-			pointIncrease = pointIncrease * 1.5;
+			pointIncrease = pointIncrease * 2;
 			alert('Congratulations! You just performed the Daily Double Chore. This task is now worth: '+
-			 this.model.get('pointValue')* 1.5);
+			 this.model.get('pointValue')* 2);
 		}
 		
 		window.currentUser.increaseScore(pointIncrease);

@@ -10,7 +10,7 @@
 
 		<header>
 			
-			<button class='addTask'> Add Task </button>
+			<button class='addTask'> Complete Chore </button>
 					<p id="logoTitle">Bex</p>
 			<button class='logout'> Log Out </button>
 		</header>
@@ -21,7 +21,9 @@
 		<div id='leaderboard'>
 			
 			<div id='roomateContainer'>
+
 			<script type="text/template" id="roomate-template">
+
 			 <div class = 'roomate'>
 				<span><h4>Roommate: <%= name %> </h4></span>
 				<span> <img src="<%= image %>">    </img></span>
@@ -32,13 +34,28 @@
 				</span>
 
 			 </div>
-			 
+
 			</script>
 			</div>
 
 		</div>
 
 		<img class= "logoImage" src="assets/images/logo.png"><img>
+
+		<div id="completedTasks">
+			<h4> Recently Completed Tasks </h4>
+			<script type="text/template" id="completedTask-template">
+				
+				<div class="newTask">
+					 
+					 	<p> Roommate: <%= name %> </p>
+					Task:<%= mostRecentTask %>
+					
+				 </div>
+				 <br>
+			</script>
+
+		</div>
 
 		
 		<div id="taskContainer" class="hidden">
@@ -50,7 +67,7 @@
 			 <br>
 			</script>
 		</form>
-			 
+			
 			
 		</div>
 		
@@ -87,6 +104,7 @@
 			<script src="js/views/roomateView.js"></script>
 			<script src="js/views/taskView.js"></script>
 			<script src="js/views/tasksView.js"></script>
+			<script src="js/views/completedTasksView.js"></script>
 
 
 			

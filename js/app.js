@@ -5,6 +5,7 @@ var roomateNames = ['Jon','Payam','Steven','Adam','Prad'];
 var roomates = new Roomates();
 var tasks = new Tasks();
 
+
 var loadDishWasher = new Task({
 	taskName:'Load the DishWasher',
 	pointValue:10,
@@ -29,6 +30,14 @@ var pickUpMail = new Task({
 	pointValue:30,
 	dailyDouble:false
 });
+
+var turnOffLights = new Task({
+	taskName:'Turn Off All Lights',
+	pointValue:35,
+	dailyDouble:false
+});
+
+
 
 var tidyLivingRoom = new Task({
 	taskName:'Tidy the Living Room',
@@ -60,6 +69,7 @@ tasks.add(loadDishWasher);
 tasks.add(emptyDishWasher);
 tasks.add(takeOutTrash);
 tasks.add(pickUpMail);
+tasks.add(turnOffLights);
 tasks.add(tidyLivingRoom)
 
 
@@ -68,6 +78,7 @@ tasks.add(tidyLivingRoom)
 
 var app = new RoomatesView();
 var taskContainer = new TasksView();
+var completedTasksView = new CompletedTasksView({collection: roomates});
 
 
 

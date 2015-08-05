@@ -1,0 +1,1 @@
+var CompletedTasks = Backbone.Collection.extend({});
